@@ -11,7 +11,9 @@ import {
   Typography,
 } from "@mui/material";
 import Style from "./Style";
-import Chick from "./../../assets/images/s4.webp";
+import Chick2 from "./../../assets/images/s11.webp";
+import Chick from "./../../assets/images/rasmalai.jpg";
+import Chick1 from "./../../assets/images/jamun.webp";
 // import Chickencard from "../../assets/images/s1.jpg";
 import OrderOnline from "../../assets/images/s1.jpg";
 import NightDine from "../../assets/images/s1.jpg";
@@ -66,18 +68,36 @@ function Home() {
         </Grid>
         
       </Container> */}
-         <Container margin='20px'>
+         <Container sx={{marginBottom: '10px'}}>
         <Box margin='30px' align='center'>
         <Button  component={Link} to={"/Menu"}variant='contained' color='warning' > Click To order </Button>
         </Box>
-        <Grid item xs={12} sm={6} md={3} margin='20px'>
+      <Grid container spacing={2} >
+          <Grid item xs={12} sm={6} md={4} >
             <Card component={Link} to={"/Menu"} sx={{ textDecoration: "none" }}>
-              <CardMedia component="img" image={Chick} />
-              <CardContent sx={{background:'rgb(20,20,10)'}}>
-                <Typography align="center" color='white'><Button variant='contained' color='warning'>SELECT</Button></Typography>
-              </CardContent>
+              <CardMedia component="img" image={Chick1} />
+              {/* <CardContent sx={{background:'rgb(20,20,10)'}}>
+                <Typography align="center" color='white'><Button variant='contained' color='warning'>Rasmalai</Button></Typography>
+              </CardContent> */}
             </Card>
           </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <Card component={Link} to={"/Menu"} sx={{ textDecoration: "none" }}>
+              <CardMedia component="img" image={Chick} />
+              {/* <CardContent sx={{background:'rgb(20,20,10)'}}>
+                <Typography align="center" color='white'><Button variant='contained' color='warning'>SELECT</Button></Typography>
+              </CardContent> */}
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={6} md={4} >
+            <Card component={Link} to={"/Menu"} sx={{ textDecoration: "none" }}>
+              <CardMedia component="img" image={Chick2} />
+              {/* <CardContent sx={{background:'rgb(20,20,10)'}}>
+                <Typography align="center" color='white'><Button variant='contained' color='warning'>SELECT</Button></Typography>
+              </CardContent> */}
+            </Card>
+          </Grid>
+      </Grid>
           
       </Container>
 
