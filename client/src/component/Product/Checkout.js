@@ -74,7 +74,7 @@ function Checkout() {
                                         name="row-radio-buttons-group"
                                     >
                                         <FormControlLabel type="radio" name="paymentMode" id="paymentMode" checked={ data.paymentMode === "cod" } onChange={readValue} value="cod" control={<Radio color="secondary" />} label="Cash on delivery" />
-                                        <FormControlLabel type="radio" name="paymentMode" id="paymentMode" checked={data.paymentMode === "card"} value="card" onChange={readValue} control={<Radio color="secondary" />} label="Card" />
+                                        {/* <FormControlLabel type="radio" name="paymentMode" id="paymentMode" checked={data.paymentMode === "card"} value="card" onChange={readValue} control={<Radio color="secondary" />} label="Card" /> */}
                                     </RadioGroup>
                                 </FormControl>
                                
